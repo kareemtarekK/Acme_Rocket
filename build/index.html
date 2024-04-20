@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en" class="sm:scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acme Rocket</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body
+    class="text-slate-50 bg-black dark:text-black dark:bg-slate-50 min-h-screen"
+    id="hero"
+  >
+    <header class="bg-teal-500 font-medium sticky top-0 z-10">
+      <div
+        class="max-w-4xl mx-auto flex justify-between items-center p-5 text-xl sm:text-2xl"
+      >
+        <h1><a href="#hero">🚀Acme Rocket</a></h1>
+        <section class="md:block hidden space-x-5">
+          <a href="#Rockets">Rockets</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Contact Us</a>
+        </section>
+        <div class="md:hidden">
+          <button class="relative -translate-x-8 cursor-pointer" id="humberger">
+            <!-- &#9776; -->
+            <div
+              class="absolute w-8 h-1 bg-white rounded -top-2 transition-all duration-500 before:transition-all before:duration-500 after:transition-all after:duration-500 before:absolute before:content-[''] before:w-8 before:h-1 before:-translate-y-3 before:-translate-x-4 before:bg-white before:rounded after:absolute after:content-[''] after:w-8 after:h-1 after:translate-y-3 after:-translate-x-4 after:bg-white after:rounded"
+            ></div>
+          </button>
+        </div>
+      </div>
+      <div
+        id="menue"
+        class="menue absolute animate-menueAnimatation origin-top bg-black h-screen top-68 w-full flex-col hidden"
+      >
+        <!-- <button id="closeMenue" class="p-6 text-8xl self-end">&times;</button> -->
+        <nav class="gap-6 flex flex-col text-5xl items-center pt-10">
+          <a class="mt-6 transform -translate-y-0.5" href="#hero">Home</a>
+          <a class="mt-6 transform -translate-y-0.5" href="#Rockets">Rockets</a>
+          <a class="mt-6 transform -translate-y-0.5" href="#testimonials"
+            >Testimonials</a
+          >
+          <a class="mt-6 transform -translate-y-0.5" href="#contact"
+            >Contact Us</a
+          >
+          <a class="mt-6 transform -translate-y-0.5" href="#footer">Legal</a>
+        </nav>
+      </div>
+    </header>
+    <main
+      class="max-w-4xl mx-auto mt-20 p-9 wideScreen:min-max-balance tailScreen:min-max-balance"
+      aria-label="main"
+    >
+      <div
+        class="flex justify-center items-center sm:flex-row flex-col-reverse px-5 gap-8"
+      >
+        <div class="p-5 mt-5 text-center sm:text-left">
+          <h1 class="text-3xl font-medium">
+            We Boldy Go <span class="text-violet-800">Where No Rocket</span> Has
+            Gone Before...
+          </h1>
+          <div class="opacity-90 text-gray-600">
+            <p class="my-5">
+              We `re building rockets for the next century today. From the moon
+              to Mars Jupiter and beyond...
+            </p>
+            <p class="my-5">Think Acme Rocket.</p>
+          </div>
+        </div>
+        <img class="w-1/2" src="../images/rocketdab.png" alt="" />
+      </div>
+      <hr class="w-2/3 bg-gray-500 opacity-90 mx-auto mt-9" />
+    </main>
+    <div
+      class="min-h-screen text-center max-w-4xl mx-auto mt-14 wideScreen:min-max-balance tailScreen:min-max-balance"
+    >
+      <section class="p-7 shadow-2xl min-h-screen">
+        <h3 class="text-3xl sm:scroll-mt-24" id="Rockets">Our Rockets</h3>
+        <ul class="flex-col flex sm:flex-row gap-8 mt-12 text-2xl sm:text-3xl">
+          <li
+            class="border border-solid border-slate-50 rounded-3xl p-5 sm:w-5/6"
+          >
+            <img
+              class="w-2/3 mx-auto"
+              src="../images/rocketman.png"
+              alt="rocketman"
+            />
+            <p class="mt-3">Explorer</p>
+            <p class="text-gray-500 mt-5 text-xl sm:hidden">
+              Affordable Exploration
+            </p>
+            <p class="hidden sm:block">$</p>
+          </li>
+          <li
+            class="border border-solid border-slate-50 rounded-3xl p-5 sm:w-5/6"
+          >
+            <img
+              class="w-2/3 mx-auto"
+              src="../images/rocketride.png"
+              alt="Adventurer"
+            />
+            <p class="mt-3">Adventurer</p>
+            <p class="text-gray-500 mt-5 text-xl sm:hidden">
+              Best Selling Rocket!
+            </p>
+            <p class="hidden sm:block">$$</p>
+          </li>
+          <li
+            class="border border-solid border-slate-50 rounded-3xl p-5 sm:w-5/6"
+          >
+            <img
+              class="w-2/3 mx-auto"
+              src="../images/rocketlaunch.png"
+              alt="Infinity"
+            />
+            <p class="mt-3">Infinity</p>
+            <p class="text-gray-500 mt-5 text-xl sm:hidden">Luxury Starship</p>
+            <p class="hidden sm:block">$$$</p>
+          </li>
+        </ul>
+      </section>
+      <hr class="w-2/3 bg-gray-500 opacity-90 mx-auto mt-14" />
+      <section class="sm:text-2xl px-8 mt-10 min-h-screen">
+        <h3 class="text-3xl sm:scroll-mt-24" id="testimonials">testimonials</h3>
+        <figure class="mt-12 rounded-3xl">
+          <blockquote
+            class="relative text-left text-xl sm:text-3xl pt-16 pl-16 pr-6 pb-16 dark:bg-teal-500 rounded-3xl"
+          >
+            <p
+              class="before:absolute before:font-serif after:font-serif before:text-gray-500 before:content-['\201C'] before:text-9xl before:left-0 before:top-0 before:transform before:translate-x-2 before:translate-y-2 after:absolute after:content-['\201D'] after:text-9xl after:right-0 after:text-gray-500 after:transform after:-translate-x-2 after:-translate-y-2 after:pt-6"
+            >
+              Acme has always been there for me. Their Explorer rocket arrived
+              in a wooden crate as expected. Lifelong customer! A++ shopping
+              experience!
+            </p>
+          </blockquote>
+          <figcaption class="text-right pr-6 pb-4">
+            &#8212;Wile E. Coyote, Genius
+          </figcaption>
+        </figure>
+        <figure class="mt-12 rounded-3xl">
+          <blockquote
+            class="relative text-left text-xl sm:text-3xl pt-16 pl-16 pr-6 pb-16 dark:bg-teal-500 rounded-3xl"
+          >
+            <p
+              class="before:absolute before:font-serif after:font-serif before:text-gray-500 before:content-['\201C'] before:text-9xl before:left-0 before:top-0 before:transform before:translate-x-2 before:translate-y-2 after:absolute after:content-['\201D'] after:text-9xl after:right-0 after:text-gray-500 after:transform after:-translate-x-2 after:-translate-y-2 after:pt-6"
+            >
+              The Acme Adventurer Rocket has thwarted my Illudium Q-36 Explosive
+              Space Modulator on several occassions.
+              <span class="italic">This makes me very, very angry!</span>
+              Nevertheless, K-9 and I have awarded Acme the Martian contract for
+              space exploration rockets based on Acme's quality and sturdy
+              designs.
+            </p>
+          </blockquote>
+          <figcaption class="text-right pr-6 pb-4">
+            &#8212;Marvin the Martian & K-9
+          </figcaption>
+        </figure>
+        <figure class="mt-12 rounded-3xl">
+          <blockquote
+            class="relative text-left text-xl sm:text-3xl pt-16 pl-16 pr-6 pb-16 dark:bg-teal-500 rounded-3xl"
+          >
+            <p
+              class="before:absolute before:font-serif after:font-serif before:text-gray-500 before:content-['\201C'] before:text-9xl before:left-0 before:top-0 before:transform before:translate-x-2 before:translate-y-2 after:absolute after:content-['\201D'] after:text-9xl after:right-0 after:text-gray-500 after:transform after:-translate-x-2 after:-translate-y-2 after:pt-6"
+            >
+              I knew I not only wanted — I needed — Acme's Infinity Rocket for
+              my mission in space. Acme delievered in one day! Nothing says
+              <q>Take me to your leader</q> like Acme's Infinity Rocket! 💯
+            </p>
+          </blockquote>
+          <figcaption class="text-right pr-6 pb-4">
+            &#8212;Buzz Lightyear
+          </figcaption>
+        </figure>
+      </section>
+      <hr class="w-2/3 bg-gray-500 opacity-90 mx-auto mt-14" />
+      <section class="sm:text-2xl">
+        <h3 id="contact" class="mt-8 text-2xl sm:text-3xl">Contact Us</h3>
+        <form
+          action=""
+          class="text-2xl sm:text-3xl flex flex-col text-left gap-4 max-w-4xl p-6 text-black"
+        >
+          <label for="subject" class="p-5 text-slate-100">Subject:</label>
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            class="p-4 rounded-2xl border border-solid border-slate-700 sm:border-none outline-none text-2xl"
+            placeholder="Your Subject"
+          />
+          <label for="message" class="p-5 text-slate-100">Message:</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            class="p-4 rounded-2xl border border-solid border-slate-700 sm:border-none outline-none text-2xl"
+            placeholder="Your Message"
+          ></textarea>
+          <button
+            class="w-48 bg-teal-500 p-4 text-slate-100 rounded-xl mt-4 border border-solid border-slate-700 hover:bg-slate-500 active:bg-slate-300 mb-12"
+          >
+            submit
+          </button>
+        </form>
+      </section>
+    </div>
+    <footer aria-label="footer" id="footer" class="text-xl bg-teal-500 p-4">
+      <div
+        class="flex flex-col sm:flex-row max-w-4xl m-auto justify-center gap-6"
+      >
+        <address>
+          <h3>Acme Rocket-Power Products, Inc.</h3>
+          555 Astro Way <br />
+          Fairfield, New Jersey 12345-5555
+          <br />
+          Email:
+          <a href="mailto:kareemtarek33333@gmail.com"
+            >Inquires@acemerockets.com</a
+          >
+          <br />
+          Phone: <a href="tel:01212275690">(555) 555-5555</a>
+        </address>
+        <nav class="hidden md:flex flex-col gap-4">
+          <a href="#Rockets">Our Rockets</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
+        <div class="text-right">
+          <p>Copyright &copy; 2024</p>
+          <p>All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
